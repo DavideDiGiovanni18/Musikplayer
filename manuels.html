@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual</title>
+    <link rel="stylesheet" href="manuels.css" type="text/css">
+  </head>
+  <body>
+<h1>Handbuch (Iphone)</h1>
+<div class="paddingContent">
+<h3><b>Beschreibung:</b></h3>
+<p>Raptify ist ein online Musikplayer, welcher zahlreiche nützliche Funktionen beinhaltet.</p>
+<p><b>Funktionen und Erklärungen:</b></p>
+
+<ul>
+  <li>Musikplayer</li>
+  <li>Icons</li>
+  <li>Hintergrundbilder</li>
+</ul>
+<br>
+
+<h3>Musikplayer</h3>
+<div class="imagePlayer">
+<img src="IMG/player.PNG">
+</div>
+
+<ol>
+  <li id="topControl">Controls</li>
+  <table id="Controls">
+    <tr>
+      <td><img src="IMG/Play.png" alt=""></td>
+      <td>
+        <p><b>Playbutton:</b>Dieser Button, startet beim klick die Musik(Player) und wechselt das Bild zum Stopbutton</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="IMG/stop.jpg" ></td>
+      <td><b>StopButton:</b> Dieser Button erscheint, wenn die Musik am laufen ist und kann beim Klick die Musik stoppen. Dabei wechselt das Bild zum Playbutton</td>
+    </tr>
+  </table>
+  <li>Slider</li>
+    <p >Mit dem Slider kann die Musik vor- und zurückgespuhlt werden.
+      Die aktuelle zeit des Liedes wird zudem angepasst. Der Rangeslider bewegt sich
+      automatisch mit der aktuellen Zeit des Liedes.</p>
+  <li>Cover</li>
+    <p>Jedes Lied besitz ein Cover und dies verädert sich beim wechseln jedes Liedes.</p>
+  <li>Songinfos</li>
+  <table>
+    <tr>
+      <td><img src="IMG/infos.PNG" id="infosArtist"></td>
+        <td>
+          <div class="infos">
+            <p><b>Obere Linie:</b>Der Songname</p>
+            <p><b>Untere Linie:</b>Der Album/Artistname</p>
+          </div>
+        </td>
+    </tr>
+  </table>
+</ol>
+<br>
+<h3>Icons</h3>
+<a href="index.html">Back home</a>
+
+<table id="bilder">
+  <tr>
+    <th>Hintergrundbilder</th>
+  </tr>
+  <tr>
+    <td>
+<a href="index.html"  onclick="changeBackground1()"><img src="IMG\setting1.jpg" alt=""></a>
+</td>
+<td>
+<a href="index.html" onclick="changeBackground2()"><img src="IMG\setting2.jpg" alt="" id="second"></a>
+</td>
+<td>
+<a href="index.html" onclick="changeBackground3()"><img src="IMG\setting3.jpg" alt="" id="third"></a>
+</td>
+  </tr>
+  <tr><td>
+<a href="index.html" onclick="changeBackground4()"><img src="IMG\setting4.jpg" alt=""id="forth"></a>
+</td>
+  </tr>
+</table>
+<h2>click on it</h2>
+</div>
+<script type="text/javascript" src="musik.js"></script>
+  </body>
+
+</html>

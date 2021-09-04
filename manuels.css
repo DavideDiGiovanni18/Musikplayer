@@ -1,0 +1,99 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+  body{
+width: 100%;
+height: 100%;
+background-color:hsla(200,100%,50%,0.5);
+  }
+.paddingContent{
+  padding: 10px;
+}
+h1{
+padding: none;
+border: 5px solid black;
+width: 100%;
+text-align: center;
+background-color: blue;
+}
+#bilder{
+width: 100%;
+}
+#Controls img{
+  width: 100px;
+  height: 100px;
+}
+
+
+h2{
+  text-align: center;
+}
+
+ul{
+  margin-left: 20px;
+}
+h3{
+margin-bottom: 10px;
+}
+ol li{
+margin-left: 20px;
+padding: 10px;
+}
+#topControl{
+  margin-top: 30px;
+}
+
+#Controls img{
+  border: 1px solid blue;
+  border-radius: 32px;
+  width: 50px;
+  height: 50px;
+}
+#Controls{
+  padding: 10px;
+}
+#Controls td{
+padding: 5px;
+font-size: 15px;
+}
+
+.imagePlayer{
+width: 220px;;
+height: 300px;
+justify-content: center;
+align-items: center;
+margin:auto;
+border: 2px solid blue;
+}
+.imagePlayer img{
+  width: 100%;
+  height: 100%;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+}
+.infos p{
+  margin: 0;
+  padding: 4px;
+  font-size: 13px;
+}
+#infosArtist{
+  width: 130px;;
+  height: 55px;
+}
+p{
+  margin-bottom: 15px;
+    font-size: 15px;
+}
+
+
+}

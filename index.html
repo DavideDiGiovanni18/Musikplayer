@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raptify</title>
+    <link rel="stylesheet" href="Style.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+<header>
+<h2 id="top" class="top">Wilkommen auf Raptify! <span class="changingWord"></span></h2>
+<p class="zeit" id="zeit"></p>
+</header>
+
+
+<div class="player">
+
+<div class="ImageSong">
+  <img src="IMG\freebeat1.jpg" class="bild"alt="bild" id="change">
+</div>
+
+
+<div class="rightSidePlayer">
+<h4>Raptify</h4>
+
+
+<div class="infos">
+  <div class="lied" id="lied">WRLD On Drugs</div>
+  <div class="Album" id="album">Album2020-Future</div>
+  </div>
+<div class="rangebar">
+<span id ="start" class="start" style="color:white">0:00</span>
+<input type="range" name="" value="0" min="0" max="100" step="1" id="range" onchange="range()">
+<span id="la"class="la"style="color:white">0:00</span>
+</div>
+
+<div class="buttonsControl">
+    <input type="image" id="Control" onclick="backward()" src="IMG\rewind.png">
+    <input type="image" id="ControlPlay" onclick="playmusic()"src="IMG\Play.png">
+    <input type="image" id="Control" onclick="forward()" src="IMG\rewind_2.jpg">
+</div>
+
+<div class="positionVolumeButton">
+
+<div class="volumeButton">
+<div class="verticalRangebar">
+  <input type="range" name="" value="5" min="0" max="10" step="1" id="r" onclick="volume()">
+</div>
+<div class="vol">
+<button id="volume" class="volume" onclick="test()"><img id="hhh"src="IMG/volume.jpg"></button>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<footer>
+  <div class="icons">
+<input type="image" src="IMG/iconBild.png" id="icon" onclick="test1()">
+<input type="image" src="IMG/iconBook.png" id="icon" onclick="window.location.href='manuels.html'">
+<input type="image" src="IMG/iconGallery.png" id="icon" onclick="window.location.href='gallery.html'">
+<input type="image" src="IMG/iconSong.png" id="icon" onclick="window.location.href='songs.html'">
+  </div>
+
+<div class="bottom">
+<a onclick="backtop()"><img src="IMG\logo.png" alt="" id="imageLogo"></a>
+<h1 id="title">Raptify</h1>
+<p>Best Rapstreamingsite</p>
+</div>
+
+</footer>
+
+<h3 id="ok">Das ist meine Webseite welche ich in dem Fach S4F umgesetzt habe</h3>
+
+<audio id="Future" controls hidden>
+<source src="MP3\freebeat1.mp3">
+</audio>
+<audio id="JuiceWrld" controls hidden>
+<source src="MP3\Cursed.mp3">
+</audio>
+<audio id="Freebeat" controls hidden >
+<source src="MP3\freebeat1.mp3">
+</audio>
+
+<script type="text/javascript">
+  setInterval(zeit,1000);
+  function zeit(){
+    var datum= new Date();
+    document.getElementById('zeit').innerHTML = datum.toLocaleTimeString();
+  }
+  function backtop() {
+  window.scrollTo({
+  top: 0,
+  left: 0,
+  behavior: 'smooth'
+});
+  }
+
+</script>
+<script type="text/javascript" src="musik.js"></script>
+
+</script>
+  </body>
+</html>
